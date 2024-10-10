@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en línea</title>
+    <link rel="stylesheet" href="trabajo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tienda en Línea</h1>
+    </header>
+
+    <main>
+        <!-- Sección de productos -->
+        <section id="product-list">
+            <h2>Productos</h2>
+            <ul id="products"></ul>
+        </section>
+
+        <!-- Detalle del producto seleccionado -->
+        <section id="product-detail" class="hidden">
+            <h2>Detalle del Producto</h2>
+            <div id="detail-content"></div>
+            <button id="add-to-cart">Agregar al Carrito</button>
+        </section>
+
+        <!-- Carrito de compras -->
+        <section id="shopping-cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart"></ul>
+            <p id="total">Total: $0.00</p>
+        </section>
+    </main>
+
+    <script src="trabajo.js"></script>
+</body>
+
+</html>
