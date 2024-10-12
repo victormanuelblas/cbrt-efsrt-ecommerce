@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 #firstSection {
-    background-color: #ECF081;
+    background-color: #accc7b;
     width: 1200px;
     height: 110px;
     display: flex;
@@ -27,7 +27,7 @@ body {
         justify-content: space-between;
         margin-right: 20px;
         a {
-            color: #AB3E5B;
+            color: #464646;
             text-decoration: none;
             text-align: right;
             font-size: 14pt;
@@ -79,3 +79,12 @@ body {
     }
 }
 
+#footer {
+    width: 1200px;
+    height: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #6684ac;
+}
