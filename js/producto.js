@@ -15,7 +15,7 @@ function addToCart () {
     }
     
     localStorage.setItem("cartElms",JSON.stringify(elms))
-    alert('Producto agregado');
+    alert('Producto agregado con exito');
 }
 
 function deleteItems (){
