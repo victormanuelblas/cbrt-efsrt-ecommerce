@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,331 @@
     <script src="./js/producto.js"></script>
     <title>Super Sale - Catalogo</title>
 </head>
+
 <body>
     <header>
         <section id="firstSection">
             <div id="logo">
                 <a href="index.html">
-                    <img alt="" src="./assets/logo-02.png" >
+                    <img alt="" src="./assets/logo-02.png">
                 </a>
             </div>
             <div id="opciones">
                 <a href="catalogo.html">Productos</a>
-                <a href="#">Nosotros</a>
+                <a href="nosotros.html">Nosotros</a>
                 <a href="#">Nuestro equipo</a>
             </div>
         </section>
     </header>
     <section id="product">
-        <div class="images">            
-            <img alt="" src="https://es8ky18ock.execute-api.us-east-1.amazonaws.com/dev/H0500TC2DS0000172492323230029VR0000A1A,gay-pride-bear-paw.jpg">
+        <div class="images">
+            <img alt="Producto 1" src="assets/Producto1.png">
         </div>
         <div class="info">
-            <h1>Camiseta de dama - garras</h1>
-            <span>Camiseta de muy buena tela, lista para ir de vacaciones</span>
-            <strong>Precio:<span>S/. 65.00</span></strong>
-            <b>Sku:<span id="sku">P001</span></b>
-            <button id="addtocart" onclick=addToCart() >Agregar</button>
+            <h1>Smartphone Galaxy S23 Ultra 512Gb</h1>
+            <span>Este telefono cuenta con una alta resolucion en la camara posterior</span>
+            <strong>Precio:<span>S/. 3999.00</span></strong>
+            <b>Sku:<span id="sku">S918BZKVLTP</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 2" src="assets/Producto2.png">
+        </div>
+        <div class="info">
+            <h1>Apple iPad 10ma Gen WI FI 10.9" 64GB-Silver</h1>
+            <span>Esta tablet tiene buen tamaño ademas es muy bueno y rapido </span>
+            <strong>Precio:<span>S/. 2299.00</span></strong>
+            <b>Sku:<span id="sku">MPQ03LZ/A</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 3" src="assets/Producto3.png">
+        </div>
+        <div class="info">
+            <h1>Televisor 55" LG OLED 4K ThinQ AI</h1>
+            <span>Este televisor promete tener buena calidad tanto como en imagen y en sonido</span>
+            <strong>Precio:<span>S/. 3899.00</span></strong>
+            <b>Sku:<span id="sku">OLED55C3PSA</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 4" src="assets/Prodcuto4.png">
+        </div>
+        <div class="info">
+            <h1>Lavadora 15kg Electrolux Premium Care</h1>
+            <span>Esta lavadora dejara muy limpia tu ropa</span>
+            <strong>Precio:<span>S/. 1199.00</span></strong>
+            <b>Sku:<span id="sku">LB15I</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 5" src="assets/Producto5.png">
+        </div>
+        <div class="info">
+            <h1>Refrigeradora Indurama Croma</h1>
+            <span>El tamaño de este electrodomestico es muy ideal para el hogar</span>
+            <strong>Precio:<span>S/. 839.00</span></strong>
+            <b>Sku:<span id="sku">177L RI-289D</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 6" src="assets/Producto6.png">
+        </div>
+        <div class="info">
+            <h1>Licuadora Oster Pro 700W negra</h1>
+            <span>Licua con mucha potencia todo lo que se meta</span>
+            <strong>Precio:<span>S/. 519.00</span></strong>
+            <b>Sku:<span id="sku">BLSTBHBPST-053</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 7" src="assets/Producto7.png">
+        </div>
+        <div class="info">
+            <h1>Cocina Indurama Parma Zafiro Croma 6 quemadores</h1>
+            <span>Con 6 quemadoras permite meter mas ollas y asi cocinar varias cosas</span>
+            <strong>Precio:<span>S/. 1059.00</span></strong>
+            <b>Sku:<span id="sku">--</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 8" src="assets/Producto8.png">
+        </div>
+        <div class="info">
+            <h1>Sony Equipo de sonido Bluetooth HDMI DVD y Karaoke</h1>
+            <span>Este equipo de sonido tiene todas las funciones para una buena experiencia</span>
+            <strong>Precio:<span>S/. 2399.00</span></strong>
+            <b>Sku:<span id="sku">MHC-V73D</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 9" src="assets/Producto9.png">
+        </div>
+        <div class="info">
+            <h1>Consola PS5 Slim con lector de disco 1TB</h1>
+            <span>Esta consola promete satisfacer tus necesidades de distraccion</span>
+            <strong>Precio:<span>S/. 2669.00</span></strong>
+            <b>Sku:<span id="sku">--</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 10" src="assets/Producto10.png">
+        </div>
+        <div class="info">
+            <h1>Nintendo SWITCH OLED White</h1>
+            <span>Promete darte una buena experiencia en juegos</span>
+            <strong>Precio:<span>S/. 3499.00</span></strong>
+            <b>Sku:<span id="sku">--</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 11" src="assets/Producto11.png">
+        </div>
+        <div class="info">
+            <h1>Computadora PC Intel Core RAM 16GB SSD 1TB MONITOR 24 FHD CASE GAMER</h1>
+            <span>Esta pc puede correr con normalidad cualquier juego pesado</span>
+            <strong>Precio:<span>S/. 2649.00</span></strong>
+            <b>Sku:<span id="sku">17-10TH</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 12" src="assets/Producto12.png">
+        </div>
+        <div class="info">
+            <h1>Apple Macbook Air 13° Chip M1 8gb Ram 256 Gb Ssd-Space Gray</h1>
+            <span>Esta laptop es buena para hacer actividades academicas</span>
+            <strong>Precio:<span>S/. 5799.50</span></strong>
+            <b>Sku:<span id="sku">MGN63LA/A</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 13" src="assets/Producto13.png">
+        </div>
+        <div class="info">
+            <h1>Secadora de ropa de pared y piso Electrolux 7kg Gris Premium Care con Time Control</h1>
+            <span>Promete dejar tu ropa bien seca que no hace falta que lo tiendas</span>
+            <strong>Precio:<span>S/. 849.00</span></strong>
+            <b>Sku:<span id="sku">EDEJ07D2JSYG</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 14" src="assets/Producto14.png">
+        </div>
+        <div class="info">
+            <h1>Extractor de Jugo Recco</h1>
+            <span>Este electrodoemetico sirve mas que nada oara hacer extractos de vegetales</span>
+            <strong>Precio:<span>S/. 179.90</span></strong>
+            <b>Sku:<span id="sku">RSJ-1052</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 15" src="assets/producto15.png">
+        </div>
+        <div class="info">
+            <h1>Horno Electrico 30L</h1>
+            <span>Este electrodomestico proemte hornear bien tus banquetes</span>
+            <strong>Precio:<span>S/. 303.90</span></strong>
+            <b>Sku:<span id="sku">REC-INHE302</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 16" src="assets/Producto16.png">
+        </div>
+        <div class="info">
+            <h1>Lavavajillas Electrolux 8 Sets Stainless Steel</h1>
+            <span>Deja los servicios ultra limpios</span>
+            <strong>Precio:<span>S/. 1099.00</span></strong>
+            <b>Sku:<span id="sku">EHCE08M2STG</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 17" src="assets/Producto17.png">
+        </div>
+        <div class="info">
+            <h1>Horno Microondas 42L con EasyClean LG</h1>
+            <span>Promete calentar bien la comida y entre otras cosas congeladas</span>
+            <strong>Precio:<span>S/. 649.00</span></strong>
+            <b>Sku:<span id="sku">MH8296DIR</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 18" src="assets/Producto18.png">
+        </div>
+        <div class="info">
+            <h1>Freidora de Aire Oster 4L Manual Diamond Force</h1>
+            <span>Promete dejar crujiente toda cosa que se fria</span>
+            <strong>Precio:<span>S/. 269.00</span></strong>
+            <b>Sku:<span id="sku">CKSTAF40MDF-053</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 19" src="assets/Producto19.png">
+        </div>
+        <div class="info">
+            <h1>Cafetera espreso negra Oster</h1>
+            <span>Promete darte un delicioso cafe</span>
+            <strong>Precio:<span>S/. 399.00</span></strong>
+            <b>Sku:<span id="sku">2126012</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 20" src="assets/Producto20.png">
+        </div>
+        <div class="info">
+            <h1>Hervidor electrico 1.7L</h1>
+            <span>Este electrodoemstico hace hervir agua sin la necesidad de hacerlo en la tetera</span>
+            <strong>Precio:<span>S/. 99.90</span></strong>
+            <b>Sku:<span id="sku">WKE-GLASS100</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 21" src="assets/Producto21.png">
+        </div>
+        <div class="info">
+            <h1>Batidora Artisan Onyx Black 4.8l KITCHENAID + ACC</h1>
+            <span>Sirve para hacer alguno que otro postre</span>
+            <strong>Precio:<span>S/. 1399.00</span></strong>
+            <b>Sku:<span id="sku">5KSM150PSEOB</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 22" src="assets/Producto22.png">
+        </div>
+        <div class="info">
+            <h1>Sandwichera Wafflera Panini 3 en 1</h1>
+            <span>Permite hacer sandwiches y wlafes a la vez</span>
+            <strong>Precio:<span>S/. 99.90</span></strong>
+            <b>Sku:<span id="sku">WSM-BRATEN3</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 23" src="assets/Producto23.png">
+        </div>
+        <div class="info">
+            <h1>Arrocera 2.2lt multifuncion 10 en 1 Oster con Bloceramic Roja</h1>
+            <span>Promete dejar el arros bien graneado</span>
+            <strong>Precio:<span>S/. 349.00</span></strong>
+            <b>Sku:<span id="sku">CKSTRC9030R</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
+            <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        </div>
+    </section>
+    <section id="product">
+        <div class="images">
+            <img alt="Producto 24" src="assets/Producto24.png">
+        </div>
+        <div class="info">
+            <h1>Tostadora 2 panes</h1>
+            <span>Promete dearte unos panes bien crujientes y tostadoss</span>
+            <strong>Precio:<span>S/. 99.00</span></strong>
+            <b>Sku:<span id="sku">TH-120</span></b>
+            <button id="addtocart" onclick=addToCart()>Agregar</button>
             <a href="./comprar.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
         </div>
     </section>
@@ -57,4 +358,5 @@
         <span>Todos los derechos reservados - 2024</span>
     </footer>
 </body>
+
 </html>
