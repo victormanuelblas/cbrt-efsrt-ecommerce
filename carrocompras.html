@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/producto.css" rel="stylesheet" type="text/css" />
-    <script src="./js/producto.js"></script>
-    <title>Super Sale - Catalogo</title>
+    <link href="css/carrocompras.css" rel="stylesheet" type="text/css" />
+    <script src="./js/carrocompras.js" type="module"></script>
+    <script src="./js/procesos.js"></script>
+    <title>Super Sale - Carro de compras</title>
 </head>
 <body>
     <header>
@@ -23,18 +24,28 @@
         </section>
     </header>
     <section id="items">
-        <div>
-            <div class="image">            
-                <img alt="" src="https://es8ky18ock.execute-api.us-east-1.amazonaws.com/dev/H0500TC2DS0000172492323230029VR0000A1A,gay-pride-bear-paw.jpg">
+        <div class="title">
+            <h4>PRODUCTO</h4>
+            <strong>PRECIO</strong>
+            <b>CANTIDAD</b>
+        </div>
+        <!--
+        <div class="item">
+            <div class="images">            
+                <img alt="" width="100px" src="https://es8ky18ock.execute-api.us-east-1.amazonaws.com/dev/H0500TC2DS0000172492323230029VR0000A1A,gay-pride-bear-paw.jpg">
             </div>
             <div class="info">
                 <h4>Camiseta de dama - garras</h4>
-                <strong>Precio:<span>S/. 65.00</span></strong>
-                <b>Sku:<span>P001</span></b>
-                <h5>Cantidad:<span>1</span></h5>                
+                <strong>S/. 65.00</strong>
+                <b>1</b>                
             </div>    
         </div>
-        
+        -->
+    </section>
+    <section id="summary">
+        <h4></h4>
+        <strong>TOTAL</strong>
+        <h5  id="totalCarrito">S/ 2000.00</h5>
     </section>
     <section id="security">
         <div>

@@ -1,24 +1,30 @@
-function addToCart () {
-    let sku = document.getElementById("sku").innerText;
-    let cartElms = localStorage.getItem("cartElms");
-    let elms = (cartElms == null) ? [] : JSON.parse(cartElms);
-    
-    let elmsIndx = elms.findIndex(objc => objc.code == sku)
+import productos from '../json/productos.json' with { type: 'json' };
 
-    if(elmsIndx >= 0){
-        elms[0].qnty += 1;
-    }else{
-        elms.push({
-            code: sku,
-            qnty: 1
-        })    
-    }
-    
-    localStorage.setItem("cartElms",JSON.stringify(elms))
-    alert('Producto agregado con exito');
-}
+let producto = "";
 
-function deleteItems (){
-    localStorage.removeItem("cartElms");
-    alert("Elementos Eliminados");
+window.onload = function() {
+    let params =  window.location.search;
+    let urlParams = new URLSearchParams(params);
+    producto = urlParams.get("prod");
+    
+
+    let selectedProduct = productos.filter((item) => item.code == producto)[0];
+    
+    let container = document.getElementById("product");
+
+    let htmlElement = '<div class="images">'
+    htmlElement += '<img alt="" src="'+ selectedProduct.imagen +'" width="500px">'
+    htmlElement += '</div>'
+    htmlElement += '<div class="info">'
+    htmlElement += '    <h1>'+ selectedProduct.title +'</h1>'
+    htmlElement += '    <span>'+ selectedProduct.description +'</span>'
+    htmlElement += '    <strong>Precio:<span>'+ selectedProduct.precio +'</span></strong>'
+    htmlElement += '    <b>Sku:<span id="sku">'+ selectedProduct.code +'</span></b>'
+    htmlElement += '    <button id="addtocart" onClick="addToCart()">Agregar</button>'
+    htmlElement += '    <a href="./carrocompras.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>'
+    htmlElement += '</div>'
+
+    console.log('htmlnuevo:', htmlElement);
+    container.innerHTML += htmlElement;
+    
 }

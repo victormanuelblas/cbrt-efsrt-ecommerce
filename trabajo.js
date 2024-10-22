@@ -64,4 +64,8 @@ function updateCart() {
 // Inicializar
 document.addEventListener('DOMContentLoaded', () => {
     displayProducts();
+
+    
+
 });
+
