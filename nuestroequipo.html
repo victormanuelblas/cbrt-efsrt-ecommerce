@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/producto.css" rel="stylesheet" type="text/css" />
-    <script src="./js/producto.js" type="module" ></script>
-    <script src="./js/procesos.js" ></script>
-    <title>Super Sale - Producto</title>
+    <link href="css/carrocompras.css" rel="stylesheet" type="text/css" />
+    <title>Super Sale - Nuestro equipo</title>
 </head>
-
 <body>
     <header>
         <section id="firstSection">
             <div id="logo">
                 <a href="index.html">
-                    <img alt="" src="./assets/logo-02.png">
+                    <img alt="" src="./assets/logo-02.png" >
                 </a>
             </div>
             <div id="opciones">
@@ -28,20 +24,29 @@
             </div>
         </section>
     </header>
-    <section id="product">
-        <!--
-        <div class="images">            
-            <img alt="" src="https://es8ky18ock.execute-api.us-east-1.amazonaws.com/dev/H0500TC2DS0000172492323230029VR0000A1A,gay-pride-bear-paw.jpg">
+    <section id="items">
+        <div class="title">
+            <h4>PRODUCTO</h4>
+            <strong>PRECIO</strong>
+            <b>CANTIDAD</b>
         </div>
-        <div class="info">
-            <h1>Camiseta de dama - garras</h1>
-            <span>Camiseta de muy buena tela, lista para ir de vacaciones</span>
-            <strong>Precio:<span>S/. 65.00</span></strong>
-            <b>Sku:<span id="sku">P001</span></b>
-            <button id="addtocart" onclick=addToCart() >Agregar</button>
-            <a href="./carrocompras.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>
+        
+        <div class="item">
+            <div class="images">            
+                <img alt="" width="100px" src="https://es8ky18ock.execute-api.us-east-1.amazonaws.com/dev/H0500TC2DS0000172492323230029VR0000A1A,gay-pride-bear-paw.jpg">
+            </div>
+            <div class="info">
+                <h4>Camiseta de dama - garras</h4>
+                <strong>S/. 65.00</strong>
+                <b>1</b>                
+            </div>    
         </div>
-        -->
+        
+    </section>
+    <section id="summary">
+        <h4></h4>
+        <strong>TOTAL</strong>
+        <h5  id="totalCarrito">S/ 2000.00</h5>
     </section>
     <section id="security">
         <div>
@@ -65,5 +70,4 @@
         <span>Todos los derechos reservados - 2024</span>
     </footer>
 </body>
-
 </html>

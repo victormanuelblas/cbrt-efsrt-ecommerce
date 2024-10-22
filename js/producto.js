@@ -21,7 +21,7 @@ window.onload = function() {
     htmlElement += '    <strong>Precio:<span>'+ selectedProduct.precio +'</span></strong>'
     htmlElement += '    <b>Sku:<span id="sku">'+ selectedProduct.code +'</span></b>'
     htmlElement += '    <button id="addtocart" onClick="addToCart()">Agregar</button>'
-    htmlElement += '    <a href="./carrocompras.html" ondblclick=deleteItems()>Ir a mi carro de compras</a>'
+    htmlElement += '    <a href="./carrocompras.html" ondblclick=deleteItems()>Ir al carro de compras</a>'
     htmlElement += '</div>'
 
     console.log('htmlnuevo:', htmlElement);

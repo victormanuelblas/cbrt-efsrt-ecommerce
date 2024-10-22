@@ -15,18 +15,18 @@ window.onload = function() {
 
         let htmlElement = '<div class="item">'
         htmlElement += '    <div class="images">'
-        htmlElement += '        <img alt="" src="'+ producto.imagen +'" width="100px">'
+        htmlElement += '        <img alt="" src="'+ producto?.imagen +'" width="100px">'
         htmlElement += '    </div>'
         htmlElement += '    <div class="info">'
-        htmlElement += '        <h4>'+producto.title+'</h4>'
-        htmlElement += '        <strong>S/. '+producto.precio+'</strong>'
+        htmlElement += '        <h4>'+producto?.title+'</h4>'
+        htmlElement += '        <strong>S/. '+producto?.precio+'</strong>'
         htmlElement += '        <b>'+items[ctrl].qnty+'</b>'
         htmlElement += '    </div>'
         htmlElement += '</div>'
 
         container.innerHTML += htmlElement;
 
-        totalCart += (producto.precio * items[ctrl].qnty)
+        totalCart += (producto?.precio * items[ctrl].qnty)
 
         console.log('producto: ', producto, 'TotalCart: ', totalCart);
     }

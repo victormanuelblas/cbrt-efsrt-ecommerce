@@ -1,0 +1,116 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+    margin: 10px;
+    padding: 0px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #f4f4f4;
+}
+#firstSection {
+    background-color: #accc7b;
+    width: 1200px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #logo {
+        width: 250px;
+        height: 100px;
+    }
+
+    #opciones {
+        min-width: 400px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+        a {
+            color: #AB3E5B;
+            text-decoration: none;
+            text-align: right;
+            font-size: 14pt;
+        }
+    }
+
+    .shopcart {
+        width: 60px;
+    }
+
+}
+
+#footer {
+    width: 1200px;
+    height: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #6684ac;
+}
+
+.nosotros {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.8;
+    color: #666;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.contenido-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagen-referencial {
+    width: 40%;
+}
+
+.imagen-referencial img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contenido-flex {
+        flex-direction: column;
+    }
+
+    .imagen-referencial {
+        width: 100%;
+    }
+
+    .imagen-referencial img {
+        width: 100%;
+    }
+}
