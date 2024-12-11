@@ -40,10 +40,11 @@ button {
     border: none;
     cursor: cell;
     border: 2px solid brown;
+
 }
 
 .hidden {
-    display: none;
+    display: block;
 }
 
 #shopping-cart {
