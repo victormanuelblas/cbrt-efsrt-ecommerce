@@ -150,3 +150,21 @@ window.onload = function ()
     
     actualizarFechaHora();
 }
+
+function zoom(e)
+{
+    e.style.transform="scale(0.90,0.90)"; 
+    e.style.transition="all 3s";
+}
+
+function origen(e)
+{
+    e.style.transform="scale(1.0,1.0)";
+    e.style.transition="all 3s";
+}
+
+for (var i=0; i<document.getElementsByClassName("sociales").length; i++)
+{
+    document.getElementsByClassName("sociales")[i].setAttribute("onmouseover", "zoom(this)");
+    document.getElementsByClassName("sociales")[i].setAttribute("onmouseout", "origen(this)");
+}
