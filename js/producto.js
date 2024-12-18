@@ -1,4 +1,4 @@
-zimport productos from '../json/productos.json' with { type: 'json' };
+import productos from '../json/productos.json' with { type: 'json' };
 
 let producto = "";
 
@@ -26,5 +26,14 @@ window.onload = function() {
 
     console.log('htmlnuevo:', htmlElement);
     container.innerHTML += htmlElement;
-    
+}
+//carrucel de imajenes 
+var i = 1;
+setInterval(carrusel, 1000)
+function carrusel() {
+    i++; // Incrementar el contador de imágenes
+    if (i > 7) i = 1; // Si supera 7, reiniciar a 1
+    document.getElementById("imajenPro").setAttribute("src", "assets/productos" + i + ".png"); // Cambiar la imagen
+    document.getElementById("imajenPro").style.opacity = "1"; // Restaurar la opacidad
+    document.getElementById("imajenPro").style.transition = "all 3s"; // Definir la transición de opacidad
 }
