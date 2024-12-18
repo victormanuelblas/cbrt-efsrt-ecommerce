@@ -78,14 +78,29 @@ function norRot(k){
     k.style.transform="rotateY(0deg)";
     k.style.transition="all 3s";   
 }
+
+var imgs=new Array(3);
+
+imgs[0]="assets/banner1.png";
+imgs[1]="assets/banner2.png";
+imgs[2]="assets/banner3.png";
+
+var c=0;
+setInterval(rotacion,1000);
+function rotacion()
+{
+ 
+ c++;
+ if(c>=imgs.length)     
+{
+ c=0;
+}
+ 
+ document.getElementById("banner").src=imgs[c]
+}
+
 window.onload = function ()
 {
-for(var i=0; i<document.getElementsByClassName("banner").length;i++)
-    {
-       document.getElementsByClassName("banner")[i].setAttribute("onmouseover","rotacion(this)");
-       document.getElementsByClassName("banner")[i].setAttribute("onmouseout","normal(this)");
-    }
-
  for(var i=0; i<document.getElementsByClassName("logas").length;i++)
         {
            document.getElementsByClassName("logas")[i].setAttribute("onmouseover","logo(this)");

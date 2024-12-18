@@ -1,4 +1,4 @@
-import productos from '../json/productos.json' with { type: 'json' };
+zimport productos from '../json/productos.json' with { type: 'json' };
 
 let producto = "";
 
