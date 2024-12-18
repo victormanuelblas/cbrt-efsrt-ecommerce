@@ -44,6 +44,21 @@ body {
         width: 60px;
     }
 }
+#calendario {
+    background-color: #accc7b;
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    div {
+        padding: 10px;
+        font-size: 14pt;
+        font-weight: 600;
+    }
+}
 
 #banner {
     width: 1200px;

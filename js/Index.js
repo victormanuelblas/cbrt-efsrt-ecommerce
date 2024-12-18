@@ -86,7 +86,7 @@ imgs[1]="assets/banner2.png";
 imgs[2]="assets/banner3.png";
 
 var c=0;
-setInterval(rotacion,1000);
+setInterval(rotacion,2000);
 function rotacion()
 {
  
@@ -98,6 +98,37 @@ function rotacion()
  
  document.getElementById("banner").src=imgs[c]
 }
+
+function actualizarFechaHora() {
+
+    let fecha = new Date();
+
+    let h = fecha.getHours();
+    let m = fecha.getMinutes();
+    let s = fecha.getSeconds();
+    
+    if(m<10) m="0"+m;
+    if(s<10) s="0"+s;
+
+    if(h>12)
+    {
+        h=h-12;
+        if(h<10) h="0"+h;
+        document.getElementById("hora").innerHTML="Hora :"+h+":"+m+":"+s + " pm";
+    }
+    else if(h<12)
+        {
+            if(h<10) h="0"+h;
+            document.getElementById("hora").innerHTML="Hora :"+h+":"+m+":"+s + " am";
+        }    
+        
+    setTimeout("actualizarFechaHora()",1000);
+    
+    let diaFormateado = fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear();
+
+    document.getElementById("fecha").innerText = "Fecha: " + diaFormateado;
+   
+   }
 
 window.onload = function ()
 {
@@ -116,4 +147,6 @@ window.onload = function ()
          document.getElementsByClassName("logosvent")[i].setAttribute("onmouseover","desRot(this)");
          document.getElementsByClassName("logosvent")[i].setAttribute("onmouseout","norRot(this)");
         }       
+    
+    actualizarFechaHora();
 }
